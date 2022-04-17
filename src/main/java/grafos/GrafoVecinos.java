@@ -1,6 +1,5 @@
 package grafos;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -37,15 +36,19 @@ public class GrafoVecinos {
         return this.aristas.get(vertice).get(vecino);
     }
 
-    public Object[] obtenerVecinos(int vertice) {
+    public HashSet<Integer> obtenerVecinos(int vertice) {
         verificarVertice(vertice);
-        return this.vecinos.get(vertice).toArray();
+        return this.vecinos.get(vertice);
     }
 
     public boolean contieneVecino(int vertice, int vecino) {
         verificarVertice(vertice);
         verificarVertice(vecino);
         return this.vecinos.get(vertice).contains(vecino);
+    }
+
+    public int tamano(){
+        return this.vecinos.size();
     }
 
     private void verificarVertice(int vertice) {

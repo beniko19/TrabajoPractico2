@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="añadido de maven + coverage de los junit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="agregado de metodos de obtener peso de las aristas">
+      <change afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/Kruskal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/UnionFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/BFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/grafos/Assert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/grafos/BFSTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinosTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,44 +65,101 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BFSTest.grafoNoConexoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrabajoPractico2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.grafos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.grafos" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.BFSTest" />
+      <option name="METHOD_NAME" value="grafoNoConexoTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BFSTest.grafoNuloTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrabajoPractico2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.grafos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.grafos" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.BFSTest" />
+      <option name="METHOD_NAME" value="grafoNuloTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BFSTest.grafoVacioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrabajoPractico2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.grafos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.grafos" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.BFSTest" />
+      <option name="METHOD_NAME" value="grafoVacioTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GrafoTestVecinos" type="JUnit" factoryName="JUnit">
       <module name="TrabajoPractico2" />
-      <option name="PACKAGE_NAME" value="grafos" />
-      <option name="MAIN_CLASS_NAME" value="grafos.GrafoVecinosTest" />
+      <option name="PACKAGE_NAME" value="test.grafos" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.GrafoVecinosTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrafoVecinosTest.testAgregarVecino" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GrafoVecinosTest.testContieneVecino" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="grafos.*" />
+          <option name="PATTERN" value="test.grafos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="grafos" />
-      <option name="MAIN_CLASS_NAME" value="grafos.GrafoVecinosTest" />
-      <option name="METHOD_NAME" value="testAgregarVecino" />
+      <option name="PACKAGE_NAME" value="test.grafos" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.GrafoVecinosTest" />
+      <option name="METHOD_NAME" value="testContieneVecino" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrafoVecinosTest.testObtenerVecinos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GrafoVecinosTest.testPesoArista" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="grafos.*" />
+          <option name="PATTERN" value="test.grafos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="grafos" />
-      <option name="MAIN_CLASS_NAME" value="grafos.GrafoVecinosTest" />
-      <option name="METHOD_NAME" value="testObtenerVecinos" />
+      <option name="PACKAGE_NAME" value="test.grafos" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.GrafoVecinosTest" />
+      <option name="METHOD_NAME" value="testPesoArista" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="TrabajoPractico2" />
+      <option name="MAIN_CLASS_NAME" value="BFSTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,14 +174,21 @@
     <list>
       <item itemvalue="Application.app.Main" />
       <item itemvalue="JUnit.GrafoTestVecinos" />
-      <item itemvalue="JUnit.GrafoVecinosTest.testAgregarVecino" />
-      <item itemvalue="JUnit.GrafoVecinosTest.testObtenerVecinos" />
+      <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="JUnit.BFSTest.grafoNoConexoTest" />
+      <item itemvalue="JUnit.BFSTest.grafoNuloTest" />
+      <item itemvalue="JUnit.BFSTest.grafoVacioTest" />
+      <item itemvalue="JUnit.GrafoVecinosTest.testContieneVecino" />
+      <item itemvalue="JUnit.GrafoVecinosTest.testPesoArista" />
       <item itemvalue="Kotlin.Unnamed" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GrafoVecinosTest.testObtenerVecinos" />
-        <item itemvalue="JUnit.GrafoVecinosTest.testAgregarVecino" />
+        <item itemvalue="JUnit.BFSTest.grafoNoConexoTest" />
+        <item itemvalue="JUnit.BFSTest.grafoVacioTest" />
+        <item itemvalue="JUnit.BFSTest.grafoNuloTest" />
+        <item itemvalue="JUnit.GrafoVecinosTest.testPesoArista" />
+        <item itemvalue="JUnit.GrafoVecinosTest.testContieneVecino" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650224158126</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="agregado de metodos de obtener peso de las aristas">
+      <created>1650226991990</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650226991990</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,15 +232,16 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="añadido de maven + coverage de los junit" />
-    <option name="LAST_COMMIT_MESSAGE" value="añadido de maven + coverage de los junit" />
+    <MESSAGE value="agregado de metodos de obtener peso de las aristas" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregado de metodos de obtener peso de las aristas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/grafos/GrafoVecinosTest.java</url>
-          <line>34</line>
-          <properties class="grafos.GrafoVecinosTest" method="testAgregarVecino">
+          <url>file://$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java</url>
+          <line>35</line>
+          <properties class="test.grafos.GrafoVecinosTest" method="testPesoArista">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -176,6 +253,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TrabajoPractico2$Main.ic" NAME="Main Coverage Results" MODIFIED="1650224019634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TrabajoPractico2$GrafoVecinosTest_testContieneVecino.ic" NAME="GrafoVecinosTest.testContieneVecino Coverage Results" MODIFIED="1650227184414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>grafos.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TrabajoPractico2$GrafoVecinosTest_testObtenerVecinos.ic" NAME="GrafoVecinosTest.testObtenerVecinos Coverage Results" MODIFIED="1650224058165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.grafos.*</FILTER>
