@@ -26,8 +26,8 @@ public class UnionFind {
     }
 
     public void union(int i, int j){
-        int raizi = encontrarRaiz(i);
-        int raizj = encontrarRaiz(j);
-        vertices[raizi] = raizj;
+        int ri = encontrarRaiz(i);
+        int rj = encontrarRaiz(j);
+        vertices[ri] = rj;
     }
 }

@@ -18,6 +18,7 @@ public class BFS {
     }
 
     public static ArrayList<Integer> ordenRecorrido(GrafoVecinos g, int source){
+        alcanzables(g, source);
         return ordenParaRecorrer;
     }
 
