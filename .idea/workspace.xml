@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="union find + kruskal">
-      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/Arista.java" afterDir="false" />
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="union find + kruskal terminados de forma basica con BFS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/Kruskal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/UnionFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grafos/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/BFS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650235628427</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="union find + kruskal terminados de forma basica con BFS">
+      <created>1650261752649</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650261752649</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +240,8 @@
     <MESSAGE value="añadido de maven + coverage de los junit" />
     <MESSAGE value="agregado de metodos de obtener peso de las aristas" />
     <MESSAGE value="union find + kruskal" />
-    <option name="LAST_COMMIT_MESSAGE" value="union find + kruskal" />
+    <MESSAGE value="union find + kruskal terminados de forma basica con BFS" />
+    <option name="LAST_COMMIT_MESSAGE" value="union find + kruskal terminados de forma basica con BFS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
