@@ -1,39 +1,51 @@
 package app;
 
 import generadorMinimo.Kruskal;
-import generadorMinimo.UnionFind;
 import grafos.BFS;
 import grafos.GrafoVecinos;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import org.json.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Iterator;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        GrafoVecinos grafo = new GrafoVecinos(9);
-        grafo.agregarVecino(0,1,4);
-        grafo.agregarVecino(0,7,8);
-        grafo.agregarVecino(1,2,8);
-        grafo.agregarVecino(1,7,12);
-        grafo.agregarVecino(2,3,6);
-        grafo.agregarVecino(2,8,3);
-        grafo.agregarVecino(2,5,4);
-        grafo.agregarVecino(3,5,13);
-        grafo.agregarVecino(3,4,9);
-        grafo.agregarVecino(5,4,10);
-        grafo.agregarVecino(6,5,3);
-        grafo.agregarVecino(7,6,1);
-        grafo.agregarVecino(7,8,6);
-        grafo.agregarVecino(8,6,5);
+        String archivoJSONnombre = "/Ninjas.json";
+        InputStream archivoJSON = Main.class.getResourceAsStream(archivoJSONnombre);
+        if (archivoJSON == null) {
+            throw new NullPointerException("Cannot find resource file " + archivoJSONnombre);
+        }
 
-        Kruskal algoritmoKruskal = new Kruskal(grafo);
-        GrafoVecinos arbolMinimo = algoritmoKruskal.generarArbolMinino();
+        JSONTokener tokener = new JSONTokener(archivoJSON);
+        JSONObject ninjas = new JSONObject(tokener);
+        GrafoVecinos grafo = new GrafoVecinos(ninjas.length());
+        for (Integer i = 0; i < ninjas.length(); i++) {
+            JSONObject ninja = new JSONObject(ninjas.get(i.toString()));
+            //System.out.println(ninjas.get(i.toString()));
+            JSONObject ninjaActualVecinos = (JSONObject) ninjas.get(i.toString());
+            //System.out.println(ninjaActualVecinos.get("NinjasCercanos"));
+            vecinosNinjaActual(i, ninjaActualVecinos.get("NinjasCercanos"), grafo);
 
-        System.out.println(BFS.ordenRecorrido(arbolMinimo, 0));
+        }
+
+        Kruskal algoritmo = new Kruskal(grafo);
+        algoritmo.generarArbolMinimo();
+
+        //System.out.println(BFS.esConexo(grafo, 0));
+        System.out.println(BFS.ordenRecorrido(grafo,0));
+
+    }
+
+    private static void vecinosNinjaActual(int vertice, Object ninjaActualObject, GrafoVecinos grafo) {
+        JSONObject ninjaActual = (JSONObject) ninjaActualObject;
+        Iterator<String> vecinos = ninjaActual.keys();
+        while (vecinos.hasNext()){
+            String vecinoActual = vecinos.next();
+            //System.out.println("Vertice: " + vertice +" Vecino actual: "+vecinoActual + " Peso: " +ninjaActual.get(vecinoActual));
+            grafo.agregarVecino(vertice, Integer.parseInt(vecinoActual),  Integer.parseInt(ninjaActual.get(vecinoActual).toString()));
+        }
 
     }
 }
+

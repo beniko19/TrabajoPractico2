@@ -3,7 +3,6 @@ package generadorMinimo;
 import grafos.Arista;
 import grafos.GrafoVecinos;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -20,7 +19,7 @@ public class Kruskal {
         this.arista = new Arista();
     }
 
-    public GrafoVecinos generarArbolMinino(){
+    public GrafoVecinos generarArbolMinimo(){
         int i = 1;
         while (i <= grafo.tamano()-1){
             buscarAristaMenorPesoDeGrafo(this.grafo);

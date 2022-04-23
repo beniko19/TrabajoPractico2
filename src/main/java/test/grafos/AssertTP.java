@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import java.util.Set;
 
-public class Assert {
+public class AssertTP {
     // Verifica que sean iguales como conjuntos
     public static void iguales(int[] esperado, Set<Integer> obtenido)
     {

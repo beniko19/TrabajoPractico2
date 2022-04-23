@@ -3,8 +3,6 @@ package test.grafos;
 import grafos.BFS;
 import grafos.GrafoVecinos;
 import org.junit.Test;
-import org.junit.Before; 
-import org.junit.After;
 
 import java.util.Set;
 
@@ -48,7 +46,7 @@ public class BFSTest {
     public void alcanzablesTest() {
         GrafoVecinos g = inicializarGrafo();
         Set<Integer> alcanzables = BFS.alcanzables(g,0);
-        Assert.iguales(new int[] {0,1,2,3}, alcanzables);
+        AssertTP.iguales(new int[] {0,1,2,3}, alcanzables);
     }
 
     private GrafoVecinos inicializarGrafo() {

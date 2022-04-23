@@ -59,10 +59,16 @@ public class GrafoVecinos {
         if (vertice < 0) {
             throw new IllegalArgumentException("El vertice no puede ser negativo: " + vertice);
         }
+
     }
 
     private boolean verificarVecino(int vertice, int vecino){
         return this.vecinos.get(vertice).contains(vecino);
     }
+
+    public Integer[] obtenerVertices(){
+        return (Integer[]) this.vecinos.toArray();
+    }
 }
+
 
