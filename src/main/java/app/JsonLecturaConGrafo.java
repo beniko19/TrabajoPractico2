@@ -8,36 +8,35 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Iterator;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-
-        String archivoJSONnombre = "/Ninjas.json";
-        InputStream archivoJSON = Main.class.getResourceAsStream(archivoJSONnombre);
-        if (archivoJSON == null) {
-            throw new NullPointerException("Cannot find resource file " + archivoJSONnombre);
+public class JsonLecturaConGrafo {
+        String nombreArchivo;
+        InputStream archivoJson;
+        GrafoVecinos grafo;
+        public JsonLecturaConGrafo(String nombreArchivo) {
+            this.nombreArchivo = "/"+nombreArchivo;
+            this.archivoJson = JsonLecturaConGrafo.class.getResourceAsStream(this.nombreArchivo);
+            if(this.archivoJson == null){
+                throw new RuntimeException("Archivo no encontrado: "+nombreArchivo);
+            }
+            else{
+                cargarNinjasEnGrafo();
+            }
         }
 
-        JSONTokener tokener = new JSONTokener(archivoJSON);
+    private void cargarNinjasEnGrafo() {
+        JSONTokener tokener = new JSONTokener(this.archivoJson);
         JSONObject ninjas = new JSONObject(tokener);
-        GrafoVecinos grafo = new GrafoVecinos(ninjas.length());
+        this.grafo = new GrafoVecinos(ninjas.length());
         for (Integer i = 0; i < ninjas.length(); i++) {
             JSONObject ninja = new JSONObject(ninjas.get(i.toString()));
             //System.out.println(ninjas.get(i.toString()));
             JSONObject ninjaActualVecinos = (JSONObject) ninjas.get(i.toString());
             //System.out.println(ninjaActualVecinos.get("NinjasCercanos"));
             vecinosNinjaActual(i, ninjaActualVecinos.get("NinjasCercanos"), grafo);
-
         }
-
-        Kruskal algoritmo = new Kruskal(grafo);
-        algoritmo.generarArbolMinimo();
-
-        //System.out.println(BFS.esConexo(grafo, 0));
-        System.out.println(BFS.ordenRecorrido(grafo,0));
-
     }
 
-    private static void vecinosNinjaActual(int vertice, Object ninjaActualObject, GrafoVecinos grafo) {
+    private void vecinosNinjaActual(int vertice, Object ninjaActualObject, GrafoVecinos grafo) {
         JSONObject ninjaActual = (JSONObject) ninjaActualObject;
         Iterator<String> vecinos = ninjaActual.keys();
         while (vecinos.hasNext()){
@@ -45,7 +44,10 @@ public class Main {
             //System.out.println("Vertice: " + vertice +" Vecino actual: "+vecinoActual + " Peso: " +ninjaActual.get(vecinoActual));
             grafo.agregarVecino(vertice, Integer.parseInt(vecinoActual),  Integer.parseInt(ninjaActual.get(vecinoActual).toString()));
         }
+    }
 
+    public GrafoVecinos obtenerGrafo(){
+            return this.grafo;
     }
 }
 
