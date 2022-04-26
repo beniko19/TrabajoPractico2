@@ -4,42 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="testJsonLecutraGrafos y KrustalTest">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_vlsi_mxgraph_jgraphx_4_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_core_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_ext_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_io_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jheaps_jheaps_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ninjas.JSON" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/ImagenGrafo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/MyWeigthedEdge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/app/LecturaDeJsonAGrafoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/grafos/ImagenGrafoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="Implementacion de libreria JGraphX, generacion de imagen de grafo, etc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoPractico2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoPractico2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/JsonLecturaConGrafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/LecturaDeJsonAGrafo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/app/JsonLecturaConGrafoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/JsonLecturaConGrafo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/Kruskal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/Kruskal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/Primm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/Primm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/UnionFind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grafos/Arista.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/Arista.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grafos/BFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/BFS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/app/JsonLecturaConGrafoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generadorMinimo/KruskalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generadorMinimo/KruskalTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/grafos/AssertTP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/grafos/AssertTP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/grafos/BFSTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/grafos/BFSTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/grafos/GrafoVecinosTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/grafos/GrafoVecinosTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +253,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650688473251</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implementacion de libreria JGraphX, generacion de imagen de grafo, etc">
+      <created>1650934517967</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650934517968</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Implementacion de libreria JGraphX, generacion de imagen de grafo, etc">
+      <created>1650934524130</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1650934524130</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,7 +289,8 @@
     <MESSAGE value="union find + kruskal terminados de forma basica con BFS" />
     <MESSAGE value="lectura de JSON" />
     <MESSAGE value="testJsonLecutraGrafos y KrustalTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="testJsonLecutraGrafos y KrustalTest" />
+    <MESSAGE value="Implementacion de libreria JGraphX, generacion de imagen de grafo, etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementacion de libreria JGraphX, generacion de imagen de grafo, etc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

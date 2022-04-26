@@ -2,12 +2,10 @@ package test.grafos;
 
 import app.LecturaDeJsonAGrafo;
 import grafos.GrafoVecinos;
-import grafos.ImagenGrafo;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;
-import test.app.LecturaDeJsonAGrafoTest;
 
 import java.io.File;
 
