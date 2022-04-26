@@ -1,20 +1,17 @@
 package app;
 
-import generadorMinimo.Kruskal;
-import grafos.BFS;
 import grafos.GrafoVecinos;
 import org.json.*;
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.Iterator;
 
-public class JsonLecturaConGrafo {
+public class LecturaDeJsonAGrafo {
         String nombreArchivo;
         InputStream archivoJson;
         GrafoVecinos grafo;
-        public JsonLecturaConGrafo(String nombreArchivo) {
-            this.nombreArchivo = "/"+nombreArchivo;
-            this.archivoJson = JsonLecturaConGrafo.class.getResourceAsStream(this.nombreArchivo);
+        public LecturaDeJsonAGrafo(String nombreArchivoAElegir) {
+            this.nombreArchivo = "/"+nombreArchivoAElegir;
+            this.archivoJson = LecturaDeJsonAGrafo.class.getResourceAsStream(this.nombreArchivo);
             if(this.archivoJson == null){
                 throw new RuntimeException("Archivo no encontrado: "+nombreArchivo);
             }
@@ -27,6 +24,7 @@ public class JsonLecturaConGrafo {
         JSONTokener tokener = new JSONTokener(this.archivoJson);
         JSONObject ninjas = new JSONObject(tokener);
         this.grafo = new GrafoVecinos(ninjas.length());
+
         for (Integer i = 0; i < ninjas.length(); i++) {
             JSONObject ninja = new JSONObject(ninjas.get(i.toString()));
             //System.out.println(ninjas.get(i.toString()));

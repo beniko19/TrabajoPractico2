@@ -4,11 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="lectura de JSON">
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/app/JsonLecturaConGrafoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" afterDir="false" />
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="testJsonLecutraGrafos y KrustalTest">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_vlsi_mxgraph_jgraphx_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_core_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_ext_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_io_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jheaps_jheaps_0_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ninjas.JSON" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/ImagenGrafo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/MyWeigthedEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/app/LecturaDeJsonAGrafoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/grafos/ImagenGrafoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/JsonLecturaConGrafo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoPractico2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoPractico2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/JsonLecturaConGrafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/LecturaDeJsonAGrafo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/app/JsonLecturaConGrafoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/JsonLecturaConGrafo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/Kruskal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/Kruskal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/Primm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/Primm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/UnionFind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/grafos/Arista.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/Arista.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/grafos/BFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/BFS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/app/JsonLecturaConGrafoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/generadorMinimo/KruskalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generadorMinimo/KruskalTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/grafos/AssertTP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/grafos/AssertTP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/grafos/BFSTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/grafos/BFSTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/grafos/GrafoVecinosTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/grafos/GrafoVecinosTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +79,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -57,9 +89,9 @@
       <recent name="C:\Users\Tincho\IdeaProjects\TrabajoPractico2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.test in TrabajoPractico2">
-    <configuration name="JsonLecturaConGrafo" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="app.JsonLecturaConGrafo" />
+  <component name="RunManager" selected="JUnit.ImagenGrafoTest.testObtenerGrafoImagen">
+    <configuration name="LecturaDeJsonAGrafo" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.LecturaDeJsonAGrafo" />
       <module name="TrabajoPractico2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,22 +107,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonLecturaConGrafoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImagenGrafoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.app.*" />
+          <option name="PATTERN" value="test.grafos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.app" />
-      <option name="MAIN_CLASS_NAME" value="test.app.JsonLecturaConGrafoTest" />
+      <option name="PACKAGE_NAME" value="test.grafos" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.ImagenGrafoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonLecturaConGrafoTest.testCargarArchivoEnObjeto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImagenGrafoTest.testObtenerGrafoImagen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrabajoPractico2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.grafos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.grafos" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.ImagenGrafoTest" />
+      <option name="METHOD_NAME" value="testObtenerGrafoImagen" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LecturaDeJsonAGrafoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <extension name="coverage">
         <pattern>
@@ -99,24 +147,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.app" />
-      <option name="MAIN_CLASS_NAME" value="test.app.JsonLecturaConGrafoTest" />
-      <option name="METHOD_NAME" value="testCargarArchivoEnObjeto" />
+      <option name="MAIN_CLASS_NAME" value="test.app.LecturaDeJsonAGrafoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LecturaDeJsonAGrafoTest.constructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrabajoPractico2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.app" />
+      <option name="MAIN_CLASS_NAME" value="test.app.LecturaDeJsonAGrafoTest" />
+      <option name="METHOD_NAME" value="constructorTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KruskalTest.testCompararOrdenDeRecorrido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LecturaDeJsonAGrafoTest.testObtenerGrafo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.generadorMinimo.*" />
+          <option name="PATTERN" value="test.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.generadorMinimo" />
-      <option name="MAIN_CLASS_NAME" value="test.generadorMinimo.KruskalTest" />
-      <option name="METHOD_NAME" value="testCompararOrdenDeRecorrido" />
+      <option name="PACKAGE_NAME" value="test.app" />
+      <option name="MAIN_CLASS_NAME" value="test.app.LecturaDeJsonAGrafoTest" />
+      <option name="METHOD_NAME" value="testObtenerGrafo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,30 +194,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test in TrabajoPractico2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TrabajoPractico2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.testCountRevision" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TrabajoPractico2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="METHOD_NAME" value="testCountRevision" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="JetRunConfigurationType" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <shortenClasspath name="NONE" />
@@ -163,23 +202,23 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JsonLecturaConGrafo" />
+      <item itemvalue="Application.LecturaDeJsonAGrafo" />
       <item itemvalue="JUnit.GrafoTestVecinos" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.JsonLecturaConGrafoTest" />
-      <item itemvalue="JUnit.JsonLecturaConGrafoTest.testCargarArchivoEnObjeto" />
-      <item itemvalue="JUnit.KruskalTest.testCompararOrdenDeRecorrido" />
-      <item itemvalue="JUnit.test in TrabajoPractico2" />
-      <item itemvalue="JUnit.test.testCountRevision" />
+      <item itemvalue="JUnit.ImagenGrafoTest" />
+      <item itemvalue="JUnit.ImagenGrafoTest.testObtenerGrafoImagen" />
+      <item itemvalue="JUnit.LecturaDeJsonAGrafoTest" />
+      <item itemvalue="JUnit.LecturaDeJsonAGrafoTest.constructorTest" />
+      <item itemvalue="JUnit.LecturaDeJsonAGrafoTest.testObtenerGrafo" />
       <item itemvalue="Kotlin.Unnamed" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test in TrabajoPractico2" />
-        <item itemvalue="JUnit.JsonLecturaConGrafoTest" />
-        <item itemvalue="JUnit.KruskalTest.testCompararOrdenDeRecorrido" />
-        <item itemvalue="JUnit.JsonLecturaConGrafoTest.testCargarArchivoEnObjeto" />
-        <item itemvalue="JUnit.test.testCountRevision" />
+        <item itemvalue="JUnit.ImagenGrafoTest.testObtenerGrafoImagen" />
+        <item itemvalue="JUnit.ImagenGrafoTest" />
+        <item itemvalue="JUnit.LecturaDeJsonAGrafoTest" />
+        <item itemvalue="JUnit.LecturaDeJsonAGrafoTest.constructorTest" />
+        <item itemvalue="JUnit.LecturaDeJsonAGrafoTest.testObtenerGrafo" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +273,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650680904339</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="testJsonLecutraGrafos y KrustalTest">
+      <created>1650688467453</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650688467453</updated>
+    </task>
+    <task id="LOCAL-00008" summary="testJsonLecutraGrafos y KrustalTest">
+      <created>1650688473251</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650688473251</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,7 +308,8 @@
     <MESSAGE value="union find + kruskal" />
     <MESSAGE value="union find + kruskal terminados de forma basica con BFS" />
     <MESSAGE value="lectura de JSON" />
-    <option name="LAST_COMMIT_MESSAGE" value="lectura de JSON" />
+    <MESSAGE value="testJsonLecutraGrafos y KrustalTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="testJsonLecutraGrafos y KrustalTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -297,6 +351,9 @@
         <watch expression="grafo.aristas.get(1)" />
         <watch expression="algoritmo.arbolGeneradorMinimo.aristas.get(1)" />
         <watch expression="algoritmo.arbolGeneradorMinimo.aristas.get(1)" />
+        <watch expression="graphXAdapter" />
+        <watch expression="((DefaultDirectedWeightedGraph)g).unmodifiableVertexSet" custom="org.jgrapht.graph.DefaultDirectedWeightedGraph" />
+        <watch expression="this" />
       </configuration>
     </watches-manager>
   </component>
@@ -312,6 +369,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/TrabajoPractico2$KruskalTest_testCompararOrdenDeRecorrido.ic" NAME="KruskalTest.testCompararOrdenDeRecorrido Coverage Results" MODIFIED="1650687611431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.generadorMinimo.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TrabajoPractico2$LecturaDeJsonAGrafoTest.ic" NAME="LecturaDeJsonAGrafoTest Coverage Results" MODIFIED="1650932251077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.app.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TrabajoPractico2$JsonLecturaConGrafoTest.ic" NAME="JsonLecturaConGrafoTest Coverage Results" MODIFIED="1650687645091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.app.*</FILTER>

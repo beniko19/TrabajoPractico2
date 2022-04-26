@@ -1,16 +1,22 @@
 package grafos;
 
+import org.jgrapht.graph.DefaultDirectedWeightedGraph;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class GrafoVecinos {
+public class GrafoVecinos extends ImagenGrafo {
     private ArrayList<HashSet<Integer>> vecinos;
     private ArrayList<HashMap<Integer, Integer>> aristas;
 
+    DefaultDirectedWeightedGraph<String, MyWeigthedEdge> g;
     public GrafoVecinos(int vertices) {
+        super();
         this.vecinos = new ArrayList<HashSet<Integer>>();
         this.aristas = new ArrayList<HashMap<Integer, Integer>>();
+        this.g = new DefaultDirectedWeightedGraph<>(MyWeigthedEdge .class);
 
         for (int i = 0; i < vertices; ++i) {
             this.vecinos.add(new HashSet<Integer>());
@@ -18,11 +24,12 @@ public class GrafoVecinos {
         }
     }
 
+    @Override
     public void agregarVecino(int vertice, int vecino, int peso) {
         verificarVertice(vertice);
         verificarVertice(vecino);
-
         if (!verificarVecino(vertice, vecino)) {
+            super.agregarVecino(vertice, vecino, peso);
             this.vecinos.get(vertice).add(vecino);
             this.vecinos.get(vecino).add(vertice);
             this.aristas.get(vertice).put(vecino,peso);
@@ -68,6 +75,11 @@ public class GrafoVecinos {
 
     public Integer[] obtenerVertices(){
         return (Integer[]) this.vecinos.toArray();
+    }
+
+    @Override
+    public void obtenerGrafoImagen() throws IOException {
+        super.obtenerGrafoImagen();
     }
 }
 
