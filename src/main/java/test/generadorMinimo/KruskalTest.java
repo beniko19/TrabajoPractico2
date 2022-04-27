@@ -1,6 +1,6 @@
 package test.generadorMinimo; 
 
-import app.LecturaDeJsonAGrafo;
+import app.ManejoJSON;
 import generadorMinimo.Kruskal;
 import grafos.BFS;
 import grafos.GrafoVecinos;
@@ -18,13 +18,11 @@ import java.util.ArrayList;
 * @version 1.0 
 */ 
 public class KruskalTest {
-    LecturaDeJsonAGrafo lecturaConGrafo;
     Kruskal kruskal;
     GrafoVecinos arbolMinimo;
     @Before
     public void before(){
-        this.lecturaConGrafo = new LecturaDeJsonAGrafo("Ninjas.json");
-        this.kruskal = new Kruskal(lecturaConGrafo.obtenerGrafo());
+      
         this.arbolMinimo = kruskal.generarArbolMinimo();
     }
 

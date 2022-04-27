@@ -1,37 +1,30 @@
 package grafos;
 
-import org.jgrapht.graph.DefaultDirectedWeightedGraph;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class GrafoVecinos extends ImagenGrafo {
-    private ArrayList<HashSet<Integer>> vecinos;
+public class GrafoVecinos {
+    private ArrayList<HashSet<Integer>> verticesConVecinos;
     private ArrayList<HashMap<Integer, Integer>> aristas;
 
-    DefaultDirectedWeightedGraph<String, MyWeigthedEdge> g;
     public GrafoVecinos(int vertices) {
-        super();
-        this.vecinos = new ArrayList<HashSet<Integer>>();
+        this.verticesConVecinos = new ArrayList<HashSet<Integer>>();
         this.aristas = new ArrayList<HashMap<Integer, Integer>>();
-        this.g = new DefaultDirectedWeightedGraph<>(MyWeigthedEdge .class);
 
         for (int i = 0; i < vertices; ++i) {
-            this.vecinos.add(new HashSet<Integer>());
+            this.verticesConVecinos.add(new HashSet<Integer>());
             this.aristas.add(new HashMap<Integer, Integer>());
         }
     }
 
-    @Override
     public void agregarVecino(int vertice, int vecino, int peso) {
         verificarVertice(vertice);
         verificarVertice(vecino);
         if (!verificarVecino(vertice, vecino)) {
-            super.agregarVecino(vertice, vecino, peso);
-            this.vecinos.get(vertice).add(vecino);
-            this.vecinos.get(vecino).add(vertice);
+            this.verticesConVecinos.get(vertice).add(vecino);
+            this.verticesConVecinos.get(vecino).add(vertice);
             this.aristas.get(vertice).put(vecino,peso);
             this.aristas.get(vecino).put(vertice,peso);
         }
@@ -45,22 +38,22 @@ public class GrafoVecinos extends ImagenGrafo {
 
     public HashSet<Integer> obtenerVecinos(int vertice) {
         verificarVertice(vertice);
-        return this.vecinos.get(vertice);
+        return this.verticesConVecinos.get(vertice);
     }
 
     public boolean contieneVecino(int vertice, int vecino) {
         verificarVertice(vertice);
         verificarVertice(vecino);
-        return this.vecinos.get(vertice).contains(vecino);
+        return this.verticesConVecinos.get(vertice).contains(vecino);
     }
 
     public int tamano(){
-        return this.vecinos.size();
+        return this.verticesConVecinos.size();
     }
 
     private void verificarVertice(int vertice) {
-        if (this.vecinos.size() <= vertice) {
-            throw new IllegalArgumentException("Los vertices deben estar entre 0 y " + (this.vecinos.size() - 1));
+        if (this.verticesConVecinos.size() <= vertice) {
+            throw new IllegalArgumentException("Los vertices deben estar entre 0 y " + (this.verticesConVecinos.size() - 1));
         }
 
         if (vertice < 0) {
@@ -70,17 +63,13 @@ public class GrafoVecinos extends ImagenGrafo {
     }
 
     private boolean verificarVecino(int vertice, int vecino){
-        return this.vecinos.get(vertice).contains(vecino);
+        return this.verticesConVecinos.get(vertice).contains(vecino);
     }
 
     public Integer[] obtenerVertices(){
-        return (Integer[]) this.vecinos.toArray();
+        return (Integer[]) this.verticesConVecinos.toArray();
     }
 
-    @Override
-    public void obtenerGrafoImagen() throws IOException {
-        super.obtenerGrafoImagen();
-    }
 }
 
 

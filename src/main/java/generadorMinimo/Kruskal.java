@@ -22,7 +22,7 @@ public class Kruskal {
     public GrafoVecinos generarArbolMinimo(){
         int i = 1;
         while (i <= grafo.tamano()-1){
-            buscarAristaMenorPesoDeGrafo(this.grafo);
+            buscarAristaMenorPesoDeGrafo(grafo);
             i++;
             union_find.union(arista.getVertice1(), arista.getVertice2());
             this.arbolGeneradorMinimo.agregarVecino(arista.getVertice1(), arista.getVertice2(), arista.getPeso());

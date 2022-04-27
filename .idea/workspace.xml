@@ -4,8 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="Implementacion de libreria JGraphX, generacion de imagen de grafo, etc">
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="sdsd">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/ManejoJSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ninjas.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/pruebaManejoJSON" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/LecturaDeJsonAGrafo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/Kruskal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/UnionFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/app/LecturaDeJsonAGrafoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/grafos/ImagenGrafoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Ninjas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Ninjas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/LecturaDeJsonAGrafo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/UnionFind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/grafos/ImagenGrafo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/grafos/MyWeigthedEdge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/app/LecturaDeJsonAGrafoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/generadorMinimo/KruskalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generadorMinimo/KruskalTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/grafos/ImagenGrafoTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +76,23 @@
       <recent name="C:\Users\Tincho\IdeaProjects\TrabajoPractico2\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ImagenGrafoTest.testObtenerGrafoImagen">
+  <component name="RunManager" selected="Application.main">
     <configuration name="LecturaDeJsonAGrafo" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.LecturaDeJsonAGrafo" />
       <module name="TrabajoPractico2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.main" />
+      <module name="TrabajoPractico2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,22 +169,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LecturaDeJsonAGrafoTest.testObtenerGrafo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TrabajoPractico2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.app" />
-      <option name="MAIN_CLASS_NAME" value="test.app.LecturaDeJsonAGrafoTest" />
-      <option name="METHOD_NAME" value="testObtenerGrafo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <option name="MAIN_CLASS_NAME" value="BFSTest" />
@@ -169,22 +187,22 @@
     </configuration>
     <list>
       <item itemvalue="Application.LecturaDeJsonAGrafo" />
+      <item itemvalue="Application.main" />
       <item itemvalue="JUnit.GrafoTestVecinos" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.ImagenGrafoTest" />
       <item itemvalue="JUnit.ImagenGrafoTest.testObtenerGrafoImagen" />
       <item itemvalue="JUnit.LecturaDeJsonAGrafoTest" />
       <item itemvalue="JUnit.LecturaDeJsonAGrafoTest.constructorTest" />
-      <item itemvalue="JUnit.LecturaDeJsonAGrafoTest.testObtenerGrafo" />
       <item itemvalue="Kotlin.Unnamed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="JUnit.ImagenGrafoTest.testObtenerGrafoImagen" />
         <item itemvalue="JUnit.ImagenGrafoTest" />
         <item itemvalue="JUnit.LecturaDeJsonAGrafoTest" />
         <item itemvalue="JUnit.LecturaDeJsonAGrafoTest.constructorTest" />
-        <item itemvalue="JUnit.LecturaDeJsonAGrafoTest.testObtenerGrafo" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650934524130</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="sdsd">
+      <created>1650982315321</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1650982315321</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,7 +315,8 @@
     <MESSAGE value="lectura de JSON" />
     <MESSAGE value="testJsonLecutraGrafos y KrustalTest" />
     <MESSAGE value="Implementacion de libreria JGraphX, generacion de imagen de grafo, etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementacion de libreria JGraphX, generacion de imagen de grafo, etc" />
+    <MESSAGE value="sdsd" />
+    <option name="LAST_COMMIT_MESSAGE" value="sdsd" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
