@@ -1,6 +1,5 @@
 package grafos;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -22,7 +21,7 @@ public class GrafoVecinos {
     public void agregarVecino(int vertice, int vecino, int peso) {
         verificarVertice(vertice);
         verificarVertice(vecino);
-        if (!verificarVecino(vertice, vecino)) {
+        if (!sonVecinos(vertice, vecino)) {
             this.verticesConVecinos.get(vertice).add(vecino);
             this.verticesConVecinos.get(vecino).add(vertice);
             this.aristas.get(vertice).put(vecino,peso);
@@ -41,7 +40,7 @@ public class GrafoVecinos {
         return this.verticesConVecinos.get(vertice);
     }
 
-    public boolean contieneVecino(int vertice, int vecino) {
+    public boolean sonVecinos(int vertice, int vecino) {
         verificarVertice(vertice);
         verificarVertice(vecino);
         return this.verticesConVecinos.get(vertice).contains(vecino);
@@ -62,14 +61,14 @@ public class GrafoVecinos {
 
     }
 
-    private boolean verificarVecino(int vertice, int vecino){
-        return this.verticesConVecinos.get(vertice).contains(vecino);
-    }
-
     public Integer[] obtenerVertices(){
         return (Integer[]) this.verticesConVecinos.toArray();
     }
 
+    public void eliminarVertice(int verticeActual, Integer vecinoAnterior) {
+        this.verticesConVecinos.remove(verticeActual);
+        this.verticesConVecinos.remove(vecinoAnterior);
+        this.aristas.get(verticeActual).remove(vecinoAnterior);
+        this.aristas.get(vecinoAnterior).remove(verticeActual);
+    }
 }
-
-

@@ -4,29 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="sdsd">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/ManejoJSON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/main.java" afterDir="false" />
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="cambios de la lectura de json y union find">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_vlsi_mxgraph_jgraphx_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_core_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_ext_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_io_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jheaps_jheaps_0_13.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ninjas.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/pruebaManejoJSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/LecturaDeJsonAGrafo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/Kruskal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrabajoPractico2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoPractico2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/Primm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/Primm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/UnionFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/grafos/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/BFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/app/LecturaDeJsonAGrafoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/grafos/ImagenGrafoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Ninjas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Ninjas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/LecturaDeJsonAGrafo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/Primm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/Primm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/UnionFind.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grafos/ImagenGrafo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grafos/MyWeigthedEdge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/app/LecturaDeJsonAGrafoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generadorMinimo/KruskalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/generadorMinimo/KruskalTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/grafos/ImagenGrafoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/grafos/GrafoVecinosTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/grafos/GrafoVecinosTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tincho/IdeaProjects/TrabajoPractico2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
@@ -214,6 +214,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650218548004</updated>
+      <workItem from="1651088726404" duration="75000" />
+      <workItem from="1651506937749" duration="5275000" />
+      <workItem from="1651542236965" duration="4635000" />
+      <workItem from="1651546890130" duration="56000" />
+      <workItem from="1651546960510" duration="295000" />
+      <workItem from="1651661579098" duration="2650000" />
+      <workItem from="1651756815822" duration="2989000" />
     </task>
     <task id="LOCAL-00001" summary="añadido de maven + coverage de los junit">
       <created>1650224158126</created>
@@ -292,8 +299,18 @@
       <option name="project" value="LOCAL" />
       <updated>1650982315321</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="cambios de la lectura de json y union find">
+      <created>1651077739451</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1651077739451</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -316,7 +333,8 @@
     <MESSAGE value="testJsonLecutraGrafos y KrustalTest" />
     <MESSAGE value="Implementacion de libreria JGraphX, generacion de imagen de grafo, etc" />
     <MESSAGE value="sdsd" />
-    <option name="LAST_COMMIT_MESSAGE" value="sdsd" />
+    <MESSAGE value="cambios de la lectura de json y union find" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios de la lectura de json y union find" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -338,6 +356,11 @@
           <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="38" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -365,30 +388,33 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TrabajoPractico2$Main.ic" NAME="Main Coverage Results" MODIFIED="1650224019634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>test.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TrabajoPractico2$GrafoVecinosTest_testContieneVecino.ic" NAME="GrafoVecinosTest.testContieneVecino Coverage Results" MODIFIED="1650227184414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>grafos.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/TrabajoPractico2$test_in_TrabajoPractico2.ic" NAME="test in TrabajoPractico2 Coverage Results" MODIFIED="1650687655164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TrabajoPractico2$KruskalTest_testCompararOrdenDeRecorrido.ic" NAME="KruskalTest.testCompararOrdenDeRecorrido Coverage Results" MODIFIED="1650687611431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>test.generadorMinimo.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TrabajoPractico2$LecturaDeJsonAGrafoTest.ic" NAME="LecturaDeJsonAGrafoTest Coverage Results" MODIFIED="1650932251077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>test.app.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TrabajoPractico2$JsonLecturaConGrafoTest.ic" NAME="JsonLecturaConGrafoTest Coverage Results" MODIFIED="1650687645091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>test.app.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TrabajoPractico2$GrafoVecinosTest_testObtenerVecinos.ic" NAME="GrafoVecinosTest.testObtenerVecinos Coverage Results" MODIFIED="1650224058165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.grafos.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/TrabajoPractico2$GrafoVecinosTest_testContieneVecino.ic" NAME="GrafoVecinosTest.testContieneVecino Coverage Results" MODIFIED="1650227184414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>grafos.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TrabajoPractico2$JsonLecturaConGrafoTest.ic" NAME="JsonLecturaConGrafoTest Coverage Results" MODIFIED="1650687645091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.app.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/TrabajoPractico2$GrafoTestVecinos.ic" NAME="GrafoTestVecinos Coverage Results" MODIFIED="1650224279466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TrabajoPractico2$main.ic" NAME="main Coverage Results" MODIFIED="1651506992738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>app.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TrabajoPractico2$LecturaDeJsonAGrafoTest.ic" NAME="LecturaDeJsonAGrafoTest Coverage Results" MODIFIED="1650932251077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.app.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TrabajoPractico2$KruskalTest_testCompararOrdenDeRecorrido.ic" NAME="KruskalTest.testCompararOrdenDeRecorrido Coverage Results" MODIFIED="1650687611431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.generadorMinimo.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/TrabajoPractico2$GrafoVecinosTest_testAgregarVecino.ic" NAME="GrafoVecinosTest.testAgregarVecino Coverage Results" MODIFIED="1650224041129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>test.grafos.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TrabajoPractico2$Main.ic" NAME="Main Coverage Results" MODIFIED="1650224019634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.*</FILTER>
     </SUITE>
   </component>
 </project>

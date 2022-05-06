@@ -28,9 +28,9 @@ public class GrafoVecinosTest {
 @Test
     public void testContieneVecino(){
 
-    assertTrue(grafo.contieneVecino(2,5));
-    assertTrue(grafo.contieneVecino(7,1));
-    assertTrue(grafo.contieneVecino(3,4));
+    assertTrue(grafo.sonVecinos(2,5));
+    assertTrue(grafo.sonVecinos(7,1));
+    assertTrue(grafo.sonVecinos(3,4));
 }
 
 @Test

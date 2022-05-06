@@ -71,4 +71,3 @@ public class BFS {
         marcados = new boolean[g.tamano()];
     }
 }
-
