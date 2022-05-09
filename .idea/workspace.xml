@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="prim and kruskal implemetados">
-      <change afterPath="$PROJECT_DIR$/src/test/java/app/ManejoJSONTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/Primm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" afterDir="false" />
-    </list>
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="modificacion de tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -228,7 +221,7 @@
       <workItem from="1651756815822" duration="2989000" />
       <workItem from="1651861774291" duration="63000" />
       <workItem from="1651948232384" duration="224000" />
-      <workItem from="1652067956899" duration="4334000" />
+      <workItem from="1652067956899" duration="4383000" />
     </task>
     <task id="LOCAL-00001" summary="añadido de maven + coverage de los junit">
       <created>1650224158126</created>
@@ -328,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652071260394</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="modificacion de tests">
+      <created>1652072372191</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1652072372191</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +358,8 @@
     <MESSAGE value="cambios de la lectura de json y union find" />
     <MESSAGE value="intento de implementar prim" />
     <MESSAGE value="prim and kruskal implemetados" />
-    <option name="LAST_COMMIT_MESSAGE" value="prim and kruskal implemetados" />
+    <MESSAGE value="modificacion de tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="modificacion de tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
