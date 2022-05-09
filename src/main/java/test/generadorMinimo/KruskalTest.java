@@ -18,12 +18,15 @@ import java.util.ArrayList;
 * @version 1.0 
 */ 
 public class KruskalTest {
-    Kruskal kruskal;
-    GrafoVecinos arbolMinimo;
+    Kruskal kruskalAlgoritmo;
+    GrafoVecinos grafoVecinos;
+    GrafoVecinos AGM;
     @Before
     public void before(){
-      
-        this.arbolMinimo = kruskal.generarArbolMinimo();
+        ManejoJSON manejoJSON = new ManejoJSON();
+        grafoVecinos = manejoJSON.leerJSON("pruebaManejoJSON");
+        kruskalAlgoritmo = new Kruskal(grafoVecinos);
+        this.AGM = kruskalAlgoritmo.generarArbolMinimo();
     }
 
     @Test
@@ -38,7 +41,7 @@ public class KruskalTest {
         expectedOrdenRecorridoDesdeVertice0.add(3);
         expectedOrdenRecorridoDesdeVertice0.add(8);
         expectedOrdenRecorridoDesdeVertice0.add(4);
-        Assert.assertEquals(expectedOrdenRecorridoDesdeVertice0, BFS.ordenRecorrido(this.arbolMinimo,0));
+        Assert.assertEquals(expectedOrdenRecorridoDesdeVertice0, BFS.ordenRecorrido(AGM,0));
 
     }
 } 

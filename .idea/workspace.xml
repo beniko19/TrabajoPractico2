@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="intento de implementar prim">
-      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/AristaVecina.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoLV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoPrim.java" afterDir="false" />
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="prim and kruskal implemetados">
+      <change afterPath="$PROJECT_DIR$/src/test/java/app/ManejoJSONTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/Primm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/Primm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,7 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -50,6 +50,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "C:/Users/Tincho/IdeaProjects/TrabajoPractico2/src/main/java/grafos",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -65,11 +67,17 @@
       <recent name="C:\Users\Tincho\IdeaProjects\TrabajoPractico2\src\main\resources" />
       <recent name="C:\Users\Tincho\IdeaProjects\TrabajoPractico2\src" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="app" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="grafos" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="JUnit.GrafoTestVecinos">
     <configuration name="LecturaDeJsonAGrafo" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.LecturaDeJsonAGrafo" />
       <module name="TrabajoPractico2" />
@@ -77,15 +85,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="app.main" />
+    <configuration name="BFSTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="app.*" />
+          <option name="PATTERN" value="test.grafos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="test.grafos" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.BFSTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,7 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImagenGrafoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GrafoVecinosTest.testContieneVecino" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <extension name="coverage">
         <pattern>
@@ -109,54 +119,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.grafos" />
-      <option name="MAIN_CLASS_NAME" value="test.grafos.ImagenGrafoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ImagenGrafoTest.testObtenerGrafoImagen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TrabajoPractico2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.grafos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.grafos" />
-      <option name="MAIN_CLASS_NAME" value="test.grafos.ImagenGrafoTest" />
-      <option name="METHOD_NAME" value="testObtenerGrafoImagen" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.GrafoVecinosTest" />
+      <option name="METHOD_NAME" value="testContieneVecino" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LecturaDeJsonAGrafoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GrafoVecinosTest.testSonVecinos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.app.*" />
+          <option name="PATTERN" value="test.grafos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.app" />
-      <option name="MAIN_CLASS_NAME" value="test.app.LecturaDeJsonAGrafoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="test.grafos" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.GrafoVecinosTest" />
+      <option name="METHOD_NAME" value="testSonVecinos" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LecturaDeJsonAGrafoTest.constructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GrafoVecinosTest.testTamano" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.app.*" />
+          <option name="PATTERN" value="test.grafos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.app" />
-      <option name="MAIN_CLASS_NAME" value="test.app.LecturaDeJsonAGrafoTest" />
-      <option name="METHOD_NAME" value="constructorTest" />
+      <option name="PACKAGE_NAME" value="test.grafos" />
+      <option name="MAIN_CLASS_NAME" value="test.grafos.GrafoVecinosTest" />
+      <option name="METHOD_NAME" value="testTamano" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KruskalTest.testCompararOrdenDeRecorrido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrabajoPractico2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.generadorMinimo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.generadorMinimo" />
+      <option name="MAIN_CLASS_NAME" value="test.generadorMinimo.KruskalTest" />
+      <option name="METHOD_NAME" value="testCompararOrdenDeRecorrido" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,22 +192,22 @@
     </configuration>
     <list>
       <item itemvalue="Application.LecturaDeJsonAGrafo" />
-      <item itemvalue="Application.main" />
       <item itemvalue="JUnit.GrafoTestVecinos" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.ImagenGrafoTest" />
-      <item itemvalue="JUnit.ImagenGrafoTest.testObtenerGrafoImagen" />
-      <item itemvalue="JUnit.LecturaDeJsonAGrafoTest" />
-      <item itemvalue="JUnit.LecturaDeJsonAGrafoTest.constructorTest" />
+      <item itemvalue="JUnit.BFSTest" />
+      <item itemvalue="JUnit.GrafoVecinosTest.testContieneVecino" />
+      <item itemvalue="JUnit.GrafoVecinosTest.testSonVecinos" />
+      <item itemvalue="JUnit.GrafoVecinosTest.testTamano" />
+      <item itemvalue="JUnit.KruskalTest.testCompararOrdenDeRecorrido" />
       <item itemvalue="Kotlin.Unnamed" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main" />
-        <item itemvalue="JUnit.ImagenGrafoTest.testObtenerGrafoImagen" />
-        <item itemvalue="JUnit.ImagenGrafoTest" />
-        <item itemvalue="JUnit.LecturaDeJsonAGrafoTest" />
-        <item itemvalue="JUnit.LecturaDeJsonAGrafoTest.constructorTest" />
+        <item itemvalue="JUnit.GrafoVecinosTest.testContieneVecino" />
+        <item itemvalue="JUnit.GrafoVecinosTest.testTamano" />
+        <item itemvalue="JUnit.GrafoVecinosTest.testSonVecinos" />
+        <item itemvalue="JUnit.BFSTest" />
+        <item itemvalue="JUnit.KruskalTest.testCompararOrdenDeRecorrido" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +228,7 @@
       <workItem from="1651756815822" duration="2989000" />
       <workItem from="1651861774291" duration="63000" />
       <workItem from="1651948232384" duration="224000" />
-      <workItem from="1652067956899" duration="3255000" />
+      <workItem from="1652067956899" duration="4334000" />
     </task>
     <task id="LOCAL-00001" summary="añadido de maven + coverage de los junit">
       <created>1650224158126</created>
@@ -309,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651861802087</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="prim and kruskal implemetados">
+      <created>1652071260394</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1652071260394</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,14 +357,15 @@
     <MESSAGE value="sdsd" />
     <MESSAGE value="cambios de la lectura de json y union find" />
     <MESSAGE value="intento de implementar prim" />
-    <option name="LAST_COMMIT_MESSAGE" value="intento de implementar prim" />
+    <MESSAGE value="prim and kruskal implemetados" />
+    <option name="LAST_COMMIT_MESSAGE" value="prim and kruskal implemetados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java</url>
-          <line>35</line>
+          <line>27</line>
           <properties class="test.grafos.GrafoVecinosTest" method="testPesoArista">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

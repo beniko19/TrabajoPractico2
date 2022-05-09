@@ -17,25 +17,31 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class GrafoVecinosTest {
     GrafoVecinos grafo;
 
-@Before
-    public void before() throws Exception {
-    this.grafo = new GrafoVecinos(8);
-    grafo.agregarVecino(2,5, 10);
-    grafo.agregarVecino(7,1, 4);
-    grafo.agregarVecino(3,4, 1);
-}
-
-@Test
-    public void testContieneVecino(){
-
-    assertTrue(grafo.sonVecinos(2,5));
-    assertTrue(grafo.sonVecinos(7,1));
-    assertTrue(grafo.sonVecinos(3,4));
-}
-
-@Test
-    public void testPesoArista(){
-        assertEquals(10, grafo.pesoArista(2,5));
+    @Before
+        public void before() throws Exception {
+        this.grafo = new GrafoVecinos(8);
+        grafo.agregarVecino(2,5, 10);
+        grafo.agregarVecino(7,1, 4);
+        grafo.agregarVecino(3,4, 1);
     }
 
-} 
+    @Test
+        public void testPesoArista(){
+            assertEquals(10, grafo.pesoArista(2,5));
+        }
+    @Test
+        public void testSonVecinos(){
+            assertTrue(grafo.sonVecinos(2,5));
+            assertTrue(grafo.sonVecinos(7,1));
+            assertTrue(grafo.sonVecinos(3,4));
+        }
+
+    @Test
+        public void testTamano(){
+            int expectedTamano = 8;
+            assertEquals(expectedTamano, grafo.tamano());
+    }
+
+}
+
+
