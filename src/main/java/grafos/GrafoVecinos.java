@@ -58,7 +58,9 @@ public class GrafoVecinos {
         if (vertice < 0) {
             throw new IllegalArgumentException("El vertice no puede ser negativo: " + vertice);
         }
-
+    }
+    public ArrayList<HashMap<Integer, Integer>> obtenerAristas(){
+        return this.aristas;
     }
 
     public Integer[] obtenerVertices(){

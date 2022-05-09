@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="cambios de la lectura de json y union find">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_vlsi_mxgraph_jgraphx_4_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_core_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_ext_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgrapht_jgrapht_io_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jheaps_jheaps_0_13.xml" beforeDir="false" />
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="intento de implementar prim">
+      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/AristaVecina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoLV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoPrim.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrabajoPractico2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrabajoPractico2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/Primm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/Primm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/UnionFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grafos/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/Primm.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/Primm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/Primm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/UnionFind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/grafos/GrafoVecinosTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/grafos/GrafoVecinosTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,24 +43,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tincho/IdeaProjects/TrabajoPractico2&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Tincho/IdeaProjects/TrabajoPractico2/src/main/java/grafos",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tincho\IdeaProjects\TrabajoPractico2\src\main\java\grafos" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tincho\IdeaProjects\TrabajoPractico2\src\main\resources" />
       <recent name="C:\Users\Tincho\IdeaProjects\TrabajoPractico2\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="grafos" />
     </key>
   </component>
   <component name="RunManager" selected="Application.main">
@@ -221,6 +214,9 @@
       <workItem from="1651546960510" duration="295000" />
       <workItem from="1651661579098" duration="2650000" />
       <workItem from="1651756815822" duration="2989000" />
+      <workItem from="1651861774291" duration="63000" />
+      <workItem from="1651948232384" duration="224000" />
+      <workItem from="1652067956899" duration="3255000" />
     </task>
     <task id="LOCAL-00001" summary="añadido de maven + coverage de los junit">
       <created>1650224158126</created>
@@ -306,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651077739451</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="intento de implementar prim">
+      <created>1651861802087</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1651861802087</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +337,8 @@
     <MESSAGE value="Implementacion de libreria JGraphX, generacion de imagen de grafo, etc" />
     <MESSAGE value="sdsd" />
     <MESSAGE value="cambios de la lectura de json y union find" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambios de la lectura de json y union find" />
+    <MESSAGE value="intento de implementar prim" />
+    <option name="LAST_COMMIT_MESSAGE" value="intento de implementar prim" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -356,11 +360,6 @@
           <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="38" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
