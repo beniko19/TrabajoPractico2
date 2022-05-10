@@ -3,6 +3,8 @@ package generadorMinimo;
 import grafos.Arista;
 import grafos.GrafoVecinos;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -51,5 +53,25 @@ public class Kruskal {
     }
     Arista getArista(){
         return this.arista;
+    }
+
+    public String[][] toArray2D(){
+        //ACA LO INICIAMOS CON [NUMERO DE VERTICES]  [3 FIJO: ESPIA/ESPIA/PESO]
+        String[][] grafo = new String[this.arbolGeneradorMinimo.tamano()][3];
+        int x = 0;
+        //INICIAMOS UN FOR QUE RECORRA LOS VERTICES DEL GRAFO.
+        for (int i = 0; i < this.arbolGeneradorMinimo.tamano(); i++) {
+            HashSet<Integer> vecinos = this.arbolGeneradorMinimo.obtenerVecinos(i);
+            Iterator<Integer> iteratorVecinos = vecinos.iterator();
+
+            while (iteratorVecinos.hasNext()){
+                int vecinoActual = iteratorVecinos.next();
+                grafo[x][0] = String.valueOf(vecinoActual);
+                grafo[x][1] = String.valueOf(i);
+                grafo[x][2] = String.valueOf(arbolGeneradorMinimo.pesoArista(i,vecinoActual));
+            }
+            x++;
+        }
+        return grafo;
     }
 }

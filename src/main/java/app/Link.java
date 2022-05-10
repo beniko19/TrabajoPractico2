@@ -5,7 +5,6 @@ import generadorMinimo.Kruskal;
 import grafos.*;
 
 import java.io.File;
-import java.io.FileReader;
 import java.util.*;
 
 public class Link {
@@ -37,17 +36,20 @@ public class Link {
         ejecutarAlgoritmos();
     }
 
+    public void agregarVetirce(int vertice, int vecino, int peso){
+
+    }
+
     private void ejecutarAlgoritmos() {
         this.AGMKruskal = algoritmoKruskal.generarArbolMinimo();
         this.AGMPrimm = algoritmoPrimm.getGrafoPrim();
     }
 
-    public ArrayList<Integer> ordenRecorridoAGMKruskal(){
-        return BFS.ordenRecorrido(AGMKruskal, 0);
+    public String[][] ordenRecorridoAGMKruskal(){
+        return this.algoritmoKruskal.toArray2D();
     }
 
-    public String ordenRecorridoAGMPrimm(){
-        // para implementar
-        return null;
+    public String[][] ordenRecorridoAGMPrimm(){
+        return this.algoritmoPrimm.toArray2D();
     }
 }

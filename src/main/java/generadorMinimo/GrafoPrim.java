@@ -7,7 +7,6 @@ import java.util.*;
 
 public class GrafoPrim {
 	
-	
 	private ArrayList<Integer> verticesAmarillos;
 	private GrafoLV grafoNegro;
 	private GrafoLV grafoAmarillo;
@@ -16,9 +15,7 @@ public class GrafoPrim {
 	{
 		this.grafoNegro=grafoOriginal;
 		this.grafoAmarillo=algoritmoPrim(grafoOriginal);
-		
 	}
-	
 	private GrafoLV algoritmoPrim(GrafoLV grafoNegro)
 	{
 		GrafoLV grafoPrim=new GrafoLV();
@@ -26,7 +23,7 @@ public class GrafoPrim {
 		AristaVecina aristaMenorPeso=new AristaVecina();
 		AristaVecina aristaAux=new AristaVecina();
 		boolean primerVecino;
-		Integer verticeAmarilloMPeso=0;	
+		Integer verticeAmarilloMPeso=0;
 		
 		for(int x=0;x< grafoNegro.getTotalVertices()-1 ;x++)
 		{	
@@ -65,8 +62,6 @@ public class GrafoPrim {
 			grafoNegro.getGrafo().get(aristaMenorPeso.getVertice()).remove(aristaInversa);
 					
 		}
-		
-		
 		return grafoPrim;
 	}
 	
@@ -75,4 +70,25 @@ public class GrafoPrim {
 		return this.grafoAmarillo;
 	}
 
+	public String[][] toArray2D()
+	{
+		//ACA LO INICIAMOS CON [NUMERO DE VERTICES]  [3 FIJO: ESPIA/ESPIA/PESO]
+		String[][] grafo=new String[this.grafoAmarillo.getTotalVertices()][3];
+		int x=0;
+		//INICIAMOS UN FOR QUE RECORRA LOS VERTICES DEL GRAFO.
+		for (Map.Entry<Integer,TreeSet<AristaVecina>> verticeConLV : this.grafoAmarillo.getGrafo().entrySet())
+		{
+
+			Iterator<AristaVecina> iterator = verticeConLV.getValue().iterator();
+			while(iterator.hasNext())
+			{
+				//DE CADA UNO SACAMOS EL VERTICE, CON EL QUE SE COMUNICA, Y EL PESO.
+				grafo[x][0]=String.valueOf(verticeConLV.getKey());
+				grafo[x][1]= String.valueOf(iterator.next().getVertice());
+				grafo[x][2]=  String.valueOf(iterator.next().getPesoArista());
+			}
+		x++;
+		}
+		return grafo;
+	}
 }

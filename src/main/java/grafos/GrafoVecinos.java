@@ -73,4 +73,5 @@ public class GrafoVecinos {
         this.aristas.get(verticeActual).remove(vecinoAnterior);
         this.aristas.get(vecinoAnterior).remove(verticeActual);
     }
+
 }

@@ -14,13 +14,10 @@ import java.util.*;
 public class main  {
     public static void main(String[] args) throws FileNotFoundException {
         Link link = new Link();
-        File file = new File(Objects.requireNonNull(Object.class.getResource("pruebaManejoJSON")).getFile()
-        );
+        File file = new File("pruebaManejoJSON");
         link.cargarGrafo(file);
         System.out.println(link.ordenRecorridoAGMKruskal());
-
         System.out.println(link.ordenRecorridoAGMPrimm());
-
     }
 
 }

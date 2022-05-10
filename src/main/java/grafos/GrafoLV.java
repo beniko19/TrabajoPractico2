@@ -18,9 +18,6 @@ public class GrafoLV {
 	
 	public GrafoLV(GrafoLV grafo)
 	{
-		
-		
-		
 	}
 	
 	public GrafoLV(int vertices)
