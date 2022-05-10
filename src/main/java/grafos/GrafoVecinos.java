@@ -50,7 +50,7 @@ public class GrafoVecinos {
         return this.verticesConVecinos.size();
     }
 
-    private void verificarVertice(int vertice) {
+     void verificarVertice(int vertice) {
         if (this.verticesConVecinos.size() <= vertice) {
             throw new IllegalArgumentException("Los vertices deben estar entre 0 y " + (this.verticesConVecinos.size() - 1));
         }

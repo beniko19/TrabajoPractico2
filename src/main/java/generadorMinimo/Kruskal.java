@@ -31,7 +31,7 @@ public class Kruskal {
         return this.arbolGeneradorMinimo;
     }
 
-    private void buscarAristaMenorPesoDeGrafo(GrafoVecinos grafo) {
+    void buscarAristaMenorPesoDeGrafo(GrafoVecinos grafo) {
         for (int i = 0; i < grafo.tamano(); i++) {
             HashSet<Integer> vecinosVertice = grafo.obtenerVecinos(i);
             buscarAristaMenorPesoDeVertice(i, vecinosVertice, grafo);
@@ -48,5 +48,8 @@ public class Kruskal {
                 arista.setVertice2(vecino);
             }
         }
+    }
+    Arista getArista(){
+        return this.arista;
     }
 }

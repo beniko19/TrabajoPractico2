@@ -1,4 +1,4 @@
-package test.grafos;
+package grafos;
 
 import grafos.GrafoVecinos;
 import org.junit.Test;
@@ -24,6 +24,22 @@ public class GrafoVecinosTest {
         grafo.agregarVecino(7,1, 4);
         grafo.agregarVecino(3,4, 1);
     }
+
+    @Test(expected=IllegalArgumentException.class)
+    public void testVerificarVerticeNoExistente(){
+        //method = verificarVetice()
+        int verticeNoExistente = 10;
+        grafo.verificarVertice(verticeNoExistente);
+    }
+
+    @Test
+    public void testVerificarVerticeExistente(){
+        //method = verificarVetice()
+        int verticeExistente = 2;
+        grafo.verificarVertice(verticeExistente);
+    }
+
+
 
     @Test
         public void testPesoArista(){

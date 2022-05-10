@@ -1,4 +1,7 @@
-package grafos;
+package generadorMinimo;
+
+import grafos.AristaVecina;
+import grafos.GrafoLV;
 
 import java.util.*;
 
@@ -59,7 +62,6 @@ public class GrafoPrim {
 			grafoPrim.agregarVertice(aristaMenorPeso.getVertice());	
 			grafoPrim.agregarArista(verticeAmarilloMPeso, grafoNegro.getVecinos(verticeAmarilloMPeso).pollFirst());		
 			AristaVecina aristaInversa=new AristaVecina(verticeAmarilloMPeso,aristaMenorPeso.getPesoArista());
-			System.out.println("arista inversa: "+aristaInversa);
 			grafoNegro.getGrafo().get(aristaMenorPeso.getVertice()).remove(aristaInversa);
 					
 		}

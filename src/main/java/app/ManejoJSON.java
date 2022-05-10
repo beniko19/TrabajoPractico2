@@ -8,7 +8,7 @@ import java.io.*;
 
 public class ManejoJSON {
 
-    public void generarJson(String nombreArchivoGuardar, GrafoVecinos grafoVecinos){
+    public static void generarJson(String nombreArchivoGuardar, GrafoVecinos grafoVecinos){
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(grafoVecinos);
         try{
@@ -20,7 +20,7 @@ public class ManejoJSON {
         }
     }
 
-    public GrafoVecinos leerJSON(String nombreArchivoCargar){
+    public static GrafoVecinos leerJSON(String nombreArchivoCargar){
         Gson gson = new Gson();
         GrafoVecinos grafo = null;
         try {
