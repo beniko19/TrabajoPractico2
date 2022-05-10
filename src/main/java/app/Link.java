@@ -4,6 +4,7 @@ import generadorMinimo.GrafoPrim;
 import generadorMinimo.Kruskal;
 import grafos.*;
 
+import java.io.FileReader;
 import java.util.*;
 
 public class Link {
@@ -14,10 +15,12 @@ public class Link {
     private Kruskal algoritmoKruskal;
     private GrafoPrim algoritmoPrimm;
 
-    public void cargarGrafo(String nombreArchivoTxt){
+    public void cargarGrafo(FileReader nombreArchivoTxt){
         grafo = ManejoJSON.leerJSON(nombreArchivoTxt);
         this.grafoLV = new GrafoLV(grafo.tamano());
         this.algoritmoKruskal = new Kruskal(grafo);
+        //--------------------------------------------------------------------------------------
+        //Cargar grafo en la otra clase de GrafoLV
         ArrayList<HashMap<Integer, Integer>> aristas = grafo.obtenerAristas();
         for (int i = 0; i < aristas.size(); i++) {
             HashMap<Integer, Integer> verticeActualVecinos = aristas.get(i);
@@ -29,6 +32,7 @@ public class Link {
             }
         }
         this.algoritmoPrimm = new GrafoPrim(grafoLV);
+        //----------------------------------------------------------------------------------------
         ejecutarAlgoritmos();
     }
 
@@ -37,7 +41,7 @@ public class Link {
         this.AGMPrimm = algoritmoPrimm.getGrafoPrim();
     }
 
-    public String ordenRecorridoAGMKruskal(){
+    public ArrayList<Integer> ordenRecorridoAGMKruskal(){
         return BFS.ordenRecorrido(AGMKruskal, 0);
     }
 

@@ -6,14 +6,16 @@ import grafos.GrafoLV;
 import generadorMinimo.GrafoPrim;
 import grafos.GrafoVecinos;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.*;
 
 public class main  {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         Link link = new Link();
-        link.cargarGrafo("pruebaManejoJSON");
+        link.cargarGrafo(new FileReader("pruebaManejoJSON"));
         System.out.println(link.ordenRecorridoAGMKruskal());
-        System.out.println(link.ordenRecorridoAGMPrimm().toString());
+        System.out.println(link.ordenRecorridoAGMPrimm());
 
     }
 

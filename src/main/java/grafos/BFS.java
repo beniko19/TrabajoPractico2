@@ -17,9 +17,9 @@ public class BFS {
         return alcanzables(g,origen).size()==g.tamano();
     }
 
-    public static String ordenRecorrido(GrafoVecinos g, int source){
+    public static ArrayList<Integer> ordenRecorrido(GrafoVecinos g, int source){
         alcanzables(g, source);
-        return ordenParaRecorrer.toString();
+        return ordenParaRecorrer;
     }
 
     // Retorna un conjunto conteniendo todos los vertices alcanzables

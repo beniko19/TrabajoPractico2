@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="modificacion de tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Link.java" afterDir="false" />
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="Creacion de clase link para que la vista pueda acceder a sus metodos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Link.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/ManejoJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/ManejoJSON.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/Kruskal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/KruskalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/grafos/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/BFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grafos/GrafoPrim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/GrafoPrim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/generadorMinimo/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/KruskalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/grafos/GrafoVecinosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/GrafoVecinosTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generadorMinimo/Kruskal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generadorMinimo/Kruskal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grafos/BFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/BFS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/generadorMinimo/KruskalTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/grafos/GrafoVecinosTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,18 +112,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrafoVecinosTest.testVerificarVerticeExistente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KruskalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrabajoPractico2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="grafos.*" />
+          <option name="PATTERN" value="generadorMinimo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="grafos" />
-      <option name="MAIN_CLASS_NAME" value="grafos.GrafoVecinosTest" />
-      <option name="METHOD_NAME" value="testVerificarVerticeExistente" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="generadorMinimo" />
+      <option name="MAIN_CLASS_NAME" value="generadorMinimo.KruskalTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,7 +179,7 @@
       <item itemvalue="Application.LecturaDeJsonAGrafo" />
       <item itemvalue="Application.main" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.GrafoVecinosTest.testVerificarVerticeExistente" />
+      <item itemvalue="JUnit.KruskalTest" />
       <item itemvalue="JUnit.KruskalTest.testBuscarAristaDeMenorPeso" />
       <item itemvalue="JUnit.GrafoTestVecinos" />
       <item itemvalue="JUnit.KruskalTest.testCompararOrdenDeRecorrido" />
@@ -198,10 +188,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.main" />
-        <item itemvalue="JUnit.KruskalTest.testBuscarAristaDeMenorPeso" />
         <item itemvalue="JUnit.KruskalTest.testCompararOrdenDeRecorrido" />
+        <item itemvalue="JUnit.KruskalTest" />
+        <item itemvalue="JUnit.KruskalTest.testBuscarAristaDeMenorPeso" />
         <item itemvalue="JUnit.GrafoTestVecinos" />
-        <item itemvalue="JUnit.GrafoVecinosTest.testVerificarVerticeExistente" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +214,8 @@
       <workItem from="1651948232384" duration="224000" />
       <workItem from="1652067956899" duration="4383000" />
       <workItem from="1652108003088" duration="4002000" />
-      <workItem from="1652197332008" duration="1320000" />
+      <workItem from="1652197332008" duration="1376000" />
+      <workItem from="1652203817222" duration="965000" />
     </task>
     <task id="LOCAL-00001" summary="añadido de maven + coverage de los junit">
       <created>1650224158126</created>
@@ -338,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652108011152</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Creacion de clase link para que la vista pueda acceder a sus metodos">
+      <created>1652198697241</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1652198697241</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +367,8 @@
     <MESSAGE value="intento de implementar prim" />
     <MESSAGE value="prim and kruskal implemetados" />
     <MESSAGE value="modificacion de tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="modificacion de tests" />
+    <MESSAGE value="Creacion de clase link para que la vista pueda acceder a sus metodos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion de clase link para que la vista pueda acceder a sus metodos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
