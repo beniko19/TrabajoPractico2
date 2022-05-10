@@ -9,6 +9,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.Before;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -27,7 +28,8 @@ public class KruskalTest {
     @Before
     public void before() throws FileNotFoundException {
         ManejoJSON manejoJSON = new ManejoJSON();
-        grafoVecinos = manejoJSON.leerJSON(new FileReader("pruebaManejoJSON"));
+        File file = new File("pruebaManejoJSON");
+        grafoVecinos = manejoJSON.leerJSON(file);
         kruskalAlgoritmo = new Kruskal(grafoVecinos);
     }
 

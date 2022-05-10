@@ -20,11 +20,15 @@ public class ManejoJSON {
         }
     }
 
-    public static GrafoVecinos leerJSON(FileReader ArchivoCargar){
+    public static GrafoVecinos leerJSON(File nombreArchivoCargar){
         Gson gson = new Gson();
         GrafoVecinos grafo = null;
-        BufferedReader reader = new BufferedReader(ArchivoCargar);
-        grafo = gson.fromJson(reader, GrafoVecinos.class);
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(nombreArchivoCargar));
+            grafo = gson.fromJson(reader, GrafoVecinos.class);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
         return grafo;
     }
 }

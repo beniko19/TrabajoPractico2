@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="Creacion de clase link para que la vista pueda acceder a sus metodos">
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="cambios en como se carga el grafo con GSON y FileReader">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Link.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/ManejoJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/ManejoJSON.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/KruskalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/grafos/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/grafos/BFS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,8 +187,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.main" />
-        <item itemvalue="JUnit.KruskalTest.testCompararOrdenDeRecorrido" />
         <item itemvalue="JUnit.KruskalTest" />
+        <item itemvalue="JUnit.KruskalTest.testCompararOrdenDeRecorrido" />
         <item itemvalue="JUnit.KruskalTest.testBuscarAristaDeMenorPeso" />
         <item itemvalue="JUnit.GrafoTestVecinos" />
       </list>
@@ -215,7 +214,8 @@
       <workItem from="1652067956899" duration="4383000" />
       <workItem from="1652108003088" duration="4002000" />
       <workItem from="1652197332008" duration="1376000" />
-      <workItem from="1652203817222" duration="965000" />
+      <workItem from="1652203817222" duration="1453000" />
+      <workItem from="1652205309866" duration="2346000" />
     </task>
     <task id="LOCAL-00001" summary="añadido de maven + coverage de los junit">
       <created>1650224158126</created>
@@ -336,11 +336,29 @@
       <option name="project" value="LOCAL" />
       <updated>1652198697241</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="cambios en como se carga el grafo con GSON y FileReader">
+      <created>1652204860041</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1652204860041</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -368,7 +386,8 @@
     <MESSAGE value="prim and kruskal implemetados" />
     <MESSAGE value="modificacion de tests" />
     <MESSAGE value="Creacion de clase link para que la vista pueda acceder a sus metodos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion de clase link para que la vista pueda acceder a sus metodos" />
+    <MESSAGE value="cambios en como se carga el grafo con GSON y FileReader" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios en como se carga el grafo con GSON y FileReader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

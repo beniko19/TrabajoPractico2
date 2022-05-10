@@ -4,6 +4,7 @@ import generadorMinimo.GrafoPrim;
 import generadorMinimo.Kruskal;
 import grafos.*;
 
+import java.io.File;
 import java.io.FileReader;
 import java.util.*;
 
@@ -15,7 +16,7 @@ public class Link {
     private Kruskal algoritmoKruskal;
     private GrafoPrim algoritmoPrimm;
 
-    public void cargarGrafo(FileReader nombreArchivoTxt){
+    public void cargarGrafo(File nombreArchivoTxt){
         grafo = ManejoJSON.leerJSON(nombreArchivoTxt);
         this.grafoLV = new GrafoLV(grafo.tamano());
         this.algoritmoKruskal = new Kruskal(grafo);
