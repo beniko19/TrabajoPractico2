@@ -13,6 +13,8 @@ public class Kruskal {
     private GrafoVecinos arbolGeneradorMinimo;
     private GrafoVecinos grafo;
     private UnionFind union_find;
+    double startTime;
+    double endTime;
 
     public Kruskal(GrafoVecinos grafo){
         this.union_find = new UnionFind(grafo);
@@ -22,6 +24,7 @@ public class Kruskal {
     }
 
     public GrafoVecinos generarArbolMinimo(){
+        this.startTime = System.currentTimeMillis();
         int i = 1;
         while (i <= grafo.tamano()-1){
             buscarAristaMenorPesoDeGrafo(grafo);
@@ -30,6 +33,7 @@ public class Kruskal {
             this.arbolGeneradorMinimo.agregarVecino(arista.getVertice1(), arista.getVertice2(), arista.getPeso());
             arista.setPeso(0);
             }
+        this.endTime = System.currentTimeMillis();
         return this.arbolGeneradorMinimo;
     }
 
@@ -76,5 +80,9 @@ public class Kruskal {
 
         }
         return grafo;
+    }
+
+    public double tiempoQueTardo(){
+        return this.endTime-this.startTime;
     }
 }

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="ultimso ajustes de la interfaz grafica">
-      <change beforePath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/grafos/GrafoVecinos.class" afterDir="false" />
+    <list default="true" id="5b72d186-2f5d-4650-a070-962206167555" name="Changes" comment="main delete">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/GrafoPrim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/GrafoPrim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generadorMinimo/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generadorMinimo/Kruskal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +212,7 @@
       <workItem from="1652203817222" duration="1453000" />
       <workItem from="1652205309866" duration="2346000" />
       <workItem from="1652212339797" duration="395000" />
-      <workItem from="1652217632919" duration="12138000" />
+      <workItem from="1652217632919" duration="12641000" />
     </task>
     <task id="LOCAL-00001" summary="añadido de maven + coverage de los junit">
       <created>1650224158126</created>
@@ -358,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652233194032</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="main delete">
+      <created>1652233386412</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1652233386412</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,7 +413,8 @@
     <MESSAGE value="Creacion de clase link para que la vista pueda acceder a sus metodos" />
     <MESSAGE value="cambios en como se carga el grafo con GSON y FileReader" />
     <MESSAGE value="ultimso ajustes de la interfaz grafica" />
-    <option name="LAST_COMMIT_MESSAGE" value="ultimso ajustes de la interfaz grafica" />
+    <MESSAGE value="main delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="main delete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

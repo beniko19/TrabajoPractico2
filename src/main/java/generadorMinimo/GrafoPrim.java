@@ -11,7 +11,8 @@ public class GrafoPrim {
 	private ArrayList<Integer> verticesAmarillos;
 	private GrafoLV grafoNegro;
 	private GrafoLV grafoAmarillo;
-	
+	double startTime;
+	double endTime;
 	public GrafoPrim(GrafoLV grafoOriginal)
 	{
 		this.grafoNegro=grafoOriginal;
@@ -25,7 +26,7 @@ public class GrafoPrim {
 		AristaVecina aristaAux=new AristaVecina();
 		boolean primerVecino;
 		Integer verticeAmarilloMPeso=0;
-		
+		this.startTime = System.currentTimeMillis();
 		for(int x=0;x< grafoNegro.getTotalVertices()-1 ;x++)
 		{	
 			primerVecino=true;		
@@ -63,6 +64,7 @@ public class GrafoPrim {
 			grafoNegro.getGrafo().get(aristaMenorPeso.getVertice()).remove(aristaInversa);
 					
 		}
+		this.endTime = System.currentTimeMillis();
 		return grafoPrim;
 	}
 	
@@ -113,5 +115,9 @@ public class GrafoPrim {
 
 		return grafoVecinos;
 
+	}
+
+	public double tiempoQueTardo(){
+		return this.endTime-this.startTime;
 	}
 }

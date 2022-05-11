@@ -52,4 +52,12 @@ public class Link {
     public String[][] ordenRecorridoAGMPrimm(){
         return this.arbolPrim.toArray2D();
     }
+
+    public double tiempoKruskal(){
+        return algoritmoKruskal.tiempoQueTardo();
+    }
+
+    public double tiempoPrim(){
+        return algoritmoPrimm.tiempoQueTardo();
+    }
 }
