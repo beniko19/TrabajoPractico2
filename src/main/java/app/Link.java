@@ -33,7 +33,6 @@ public class Link {
                 grafoLV.agregarArista(i, vecinoConPeso.getKey(), vecinoConPeso.getValue());
             }
         }
-        System.out.println(grafoLV);
         this.algoritmoPrimm = new GrafoPrim(grafoLV);
         //----------------------------------------------------------------------------------------
         ejecutarAlgoritmos();

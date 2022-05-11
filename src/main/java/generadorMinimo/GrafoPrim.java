@@ -73,31 +73,6 @@ public class GrafoPrim {
 		return this.grafoAmarillo;
 	}
 
-	public String[][] toArray2D()
-	{
-		//ACA LO INICIAMOS CON [NUMERO DE VERTICES]  [3 FIJO: ESPIA/ESPIA/PESO]
-		String[][] grafo=new String[((this.grafoAmarillo.getTotalVertices()*2)-1)*2][3];
-		int x=0;
-		//INICIAMOS UN FOR QUE RECORRA LOS VERTICES DEL GRAFO.
-		for (Map.Entry<Integer,TreeSet<AristaVecina>> verticeConLV : this.grafoAmarillo.getGrafo().entrySet())
-		{
-
-			Iterator<AristaVecina> iterator = verticeConLV.getValue().iterator();
-			while(iterator.hasNext())
-			{
-				AristaVecina next = iterator.next();
-				//DE CADA UNO SACAMOS EL VERTICE, CON EL QUE SE COMUNICA, Y EL PESO.
-				grafo[x][0]=String.valueOf(verticeConLV.getKey());
-				//grafo[x][1]= String.valueOf(iterator.next().getVertice());
-				//grafo[x][2]=  String.valueOf(iterator.next().getPesoArista());
-				grafo[x][1]= String.valueOf(next.getVertice());
-				grafo[x][2]= String.valueOf(next.getVertice());
-				x++;
-			}
-		}
-		return grafo;
-	}
-
 	public GrafoVecinos toGrafoVecinos()
 	{
 		GrafoVecinos grafoVecinos=new GrafoVecinos(this.grafoAmarillo.getTotalVertices());
