@@ -2,6 +2,7 @@ package generadorMinimo;
 
 import grafos.AristaVecina;
 import grafos.GrafoLV;
+import grafos.GrafoVecinos;
 
 import java.util.*;
 
@@ -73,7 +74,7 @@ public class GrafoPrim {
 	public String[][] toArray2D()
 	{
 		//ACA LO INICIAMOS CON [NUMERO DE VERTICES]  [3 FIJO: ESPIA/ESPIA/PESO]
-		String[][] grafo=new String[this.grafoAmarillo.getTotalVertices()][3];
+		String[][] grafo=new String[((this.grafoAmarillo.getTotalVertices()*2)-1)*2][3];
 		int x=0;
 		//INICIAMOS UN FOR QUE RECORRA LOS VERTICES DEL GRAFO.
 		for (Map.Entry<Integer,TreeSet<AristaVecina>> verticeConLV : this.grafoAmarillo.getGrafo().entrySet())
@@ -89,10 +90,28 @@ public class GrafoPrim {
 				//grafo[x][2]=  String.valueOf(iterator.next().getPesoArista());
 				grafo[x][1]= String.valueOf(next.getVertice());
 				grafo[x][2]= String.valueOf(next.getVertice());
-
+				x++;
 			}
-		x++;
 		}
 		return grafo;
+	}
+
+	public GrafoVecinos toGrafoVecinos()
+	{
+		GrafoVecinos grafoVecinos=new GrafoVecinos(this.grafoAmarillo.getTotalVertices());
+		AristaVecina aristaAux=new AristaVecina();
+
+		for (Map.Entry<Integer,TreeSet<AristaVecina>> verticeConLV : this.grafoAmarillo.getGrafo().entrySet())
+		{
+			Iterator<AristaVecina> iterator = verticeConLV.getValue().iterator();
+			while(iterator.hasNext())
+			{
+				aristaAux=iterator.next();
+				grafoVecinos.agregarVecino(verticeConLV.getKey(), aristaAux.getVertice(),(int) aristaAux.getPesoArista());
+			}
+		}
+
+		return grafoVecinos;
+
 	}
 }

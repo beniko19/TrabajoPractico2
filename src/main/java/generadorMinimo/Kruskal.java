@@ -57,7 +57,8 @@ public class Kruskal {
 
     public String[][] toArray2D(){
         //ACA LO INICIAMOS CON [NUMERO DE VERTICES]  [3 FIJO: ESPIA/ESPIA/PESO]
-        String[][] grafo = new String[this.arbolGeneradorMinimo.tamano()][3];
+        String[][] grafo = new String[((this.arbolGeneradorMinimo.tamano())-1)*2][3];
+
         int x = 0;
         //INICIAMOS UN FOR QUE RECORRA LOS VERTICES DEL GRAFO.
         for (int i = 0; i < this.arbolGeneradorMinimo.tamano(); i++) {
@@ -69,8 +70,10 @@ public class Kruskal {
                 grafo[x][0] = String.valueOf(vecinoActual);
                 grafo[x][1] = String.valueOf(i);
                 grafo[x][2] = String.valueOf(arbolGeneradorMinimo.pesoArista(i,vecinoActual));
+                x++;
             }
-            x++;
+
+
         }
         return grafo;
     }

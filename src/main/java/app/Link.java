@@ -12,6 +12,8 @@ public class Link {
     private GrafoVecinos AGMKruskal;
     private GrafoLV grafoLV;
     private GrafoLV AGMPrimm;
+
+    private GrafoVecinos arbolPrim;
     private Kruskal algoritmoKruskal;
     private GrafoPrim algoritmoPrimm;
 
@@ -31,18 +33,16 @@ public class Link {
                 grafoLV.agregarArista(i, vecinoConPeso.getKey(), vecinoConPeso.getValue());
             }
         }
+        System.out.println(grafoLV);
         this.algoritmoPrimm = new GrafoPrim(grafoLV);
         //----------------------------------------------------------------------------------------
         ejecutarAlgoritmos();
     }
 
-    public void agregarVetirce(int vertice, int vecino, int peso){
-
-    }
-
     private void ejecutarAlgoritmos() {
         this.AGMKruskal = algoritmoKruskal.generarArbolMinimo();
         this.AGMPrimm = algoritmoPrimm.getGrafoPrim();
+        this.arbolPrim = this.algoritmoPrimm.toGrafoVecinos();
     }
 
     public String[][] ordenRecorridoAGMKruskal(){
@@ -50,6 +50,6 @@ public class Link {
     }
 
     public String[][] ordenRecorridoAGMPrimm(){
-        return this.algoritmoPrimm.toArray2D();
+        return this.arbolPrim.toArray2D();
     }
 }

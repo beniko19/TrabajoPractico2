@@ -3,6 +3,7 @@ package grafos;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class GrafoVecinos {
     private ArrayList<HashSet<Integer>> verticesConVecinos;
@@ -72,6 +73,27 @@ public class GrafoVecinos {
         this.verticesConVecinos.remove(vecinoAnterior);
         this.aristas.get(verticeActual).remove(vecinoAnterior);
         this.aristas.get(vecinoAnterior).remove(verticeActual);
+    }
+
+    public String[][] toArray2D(){
+        //ACA LO INICIAMOS CON [NUMERO DE VERTICES]  [3 FIJO: ESPIA/ESPIA/PESO]
+        String[][] grafo = new String[(this.tamano()-1)*2][3];
+        int x = 0;
+        //INICIAMOS UN FOR QUE RECORRA LOS VERTICES DEL GRAFO.
+        for (int i = 0; i < this.tamano(); i++) {
+            HashSet<Integer> vecinos = this.obtenerVecinos(i);
+            Iterator<Integer> iteratorVecinos = vecinos.iterator();
+
+            while (iteratorVecinos.hasNext()){
+                int vecinoActual = iteratorVecinos.next();
+                grafo[x][0] = String.valueOf(vecinoActual);
+                grafo[x][1] = String.valueOf(i);
+                grafo[x][2] = String.valueOf(this.pesoArista(i,vecinoActual));
+                x++;
+            }
+
+        }
+        return grafo;
     }
 
 }
