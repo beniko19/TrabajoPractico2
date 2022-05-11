@@ -82,10 +82,14 @@ public class GrafoPrim {
 			Iterator<AristaVecina> iterator = verticeConLV.getValue().iterator();
 			while(iterator.hasNext())
 			{
+				AristaVecina next = iterator.next();
 				//DE CADA UNO SACAMOS EL VERTICE, CON EL QUE SE COMUNICA, Y EL PESO.
 				grafo[x][0]=String.valueOf(verticeConLV.getKey());
-				grafo[x][1]= String.valueOf(iterator.next().getVertice());
-				grafo[x][2]=  String.valueOf(iterator.next().getPesoArista());
+				//grafo[x][1]= String.valueOf(iterator.next().getVertice());
+				//grafo[x][2]=  String.valueOf(iterator.next().getPesoArista());
+				grafo[x][1]= String.valueOf(next.getVertice());
+				grafo[x][2]= String.valueOf(next.getVertice());
+
 			}
 		x++;
 		}
